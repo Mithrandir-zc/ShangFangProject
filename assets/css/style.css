@@ -227,7 +227,7 @@ nav input:checked ~ .navbar{
   main styling starts here
 =================================*/
 .banner-section{    
-  background-image: url(assets/images/img1.PNG);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
@@ -271,6 +271,9 @@ nav input:checked ~ .navbar{
 } 
 
 /* welcome section start */
+.welcome-section{
+  background-image: url(../images/bg1.jpg);
+}
 .welcome-section .wrapper { padding-top: 118px; }
 
 .welcome-content{
@@ -283,8 +286,8 @@ nav input:checked ~ .navbar{
   /* margin-right: 47px; */
 }
 
-.content1 h3 { font-size: 30px; } 
-.content1 h3 span { color: #6eab52; }
+.content1 h3 { font-size: 30px; color:white } 
+.content1 h3 span { color: #82d15d; }
 
 .content1 .line{
   display: block;
@@ -294,10 +297,12 @@ nav input:checked ~ .navbar{
 }
 
 .content1 p{
-  color: #8d8b8f;
-  margin-bottom: 32px;
-  font-size: 17px;
+  color: #d3ced8;
+  margin-bottom: 30px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
+  margin-right: 25px;
 }
 
 .content1 a{
@@ -328,20 +333,24 @@ nav input:checked ~ .navbar{
 
 .inner-content span{
   display: block;
-  margin: 26px 0;
-  font-size: 22px;
+  margin: 25px 0;
+  font-size: 25px;
   font-weight: 600;
+  color: #69ad31;
 }
 
 .inner-content p{
   font-size: 17px;
-  color: #8d8b8f;
+  color: #b6acc0;
   letter-spacing: 1px;
 }
-
+.inner-content img{
+  height: 320px;
+}
 /* servics section start */
 .our-services{
   background-color: #69ad31;
+  background-image: url(../images/bg2.jpg);
   padding-top: 123px;
 }
 
@@ -381,7 +390,7 @@ nav input:checked ~ .navbar{
     text-align: center;
   } 
 
-.services-content img { border-radius: 120px; }
+.services-content img { border-radius: 120px; height: 280px; width: 267px;}
 
 .services-content .lawn{
   display: block;
@@ -404,6 +413,9 @@ nav input:checked ~ .navbar{
 /* gallery section start */
 .gallery-section{
   padding-top: 107px;
+  background-image: url(../images/bg3.jpg);
+  background-size: cover;
+  height: 70vw;
 }
 
 .gallery-content h5{
@@ -411,6 +423,7 @@ nav input:checked ~ .navbar{
   font-size: 39px;
   font-weight: 400;
   margin-bottom: 25px;
+  color: white;
 }
 
 .gallery-content span{
@@ -424,7 +437,7 @@ nav input:checked ~ .navbar{
 
 .gallery-content p{
   text-align: center;
-  color: #8d8b8f;
+  color: #efe7f7;
   margin-bottom: 66px;
 }
 
