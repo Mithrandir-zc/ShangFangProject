@@ -20,13 +20,12 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display: flex;
 }
 
 /* Force scrollbar */
@@ -473,10 +472,20 @@ nav input:checked ~ .navbar{
 .gallery-images{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 100px;
   margin-bottom: 118px;
 }
 
-.gallery-images .images { margin: 0 21px 30px 0; }
+.gallery-images.images {
+  margin: auto 20px   
+}
+.gallery-images.images{
+  width: 359px;
+  height: 240px;  
+}
 
 /* gallery section done */
 
@@ -710,8 +719,7 @@ footer span{
 footer .bottom { color: #8d8b8f; }
 footer .bottom:hover { color: #fff; }
 
-
- /*=================================
+/*=================================
   footer styling ends here
 =================================*/ 
 
