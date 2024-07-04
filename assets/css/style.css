@@ -472,8 +472,8 @@ nav input:checked ~ .navbar{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  row-gap: 40px;
-  column-gap: 40px;
+  row-gap: 1vw;
+  column-gap: 1.5vw;
   margin-bottom: 118px;
 }
 
@@ -992,17 +992,15 @@ footer .bottom:hover { color: #fff; }
 /* our services done */
 
 /* gallery css */
-@media screen and (min-width: 1921px){
+@media (min-width: 1920px) and (max-width: 2580px){
   .gallery-images img{
-    height: 240px
+    height: 240px;
+    width: 359px;
   }
 }
-@media screen and (max-width: 1920px) {
-  .gallery-images img{
-    height: 175px;
-  }
+@media (max-width: 1920px){
 }
-@media screen and (max-width: 1326px){
+@media screen and (max-width: 1400px){
   .gallery-images{
     flex-wrap: wrap;
     text-align: center;
@@ -1010,9 +1008,13 @@ footer .bottom:hover { color: #fff; }
     width: 100%;
     justify-content: space-evenly;
   }
+  .gallery-images img{
+    height: 160px;
+    width: 200px;
+  }
 }
   
-  @media screen and (max-width: 910px){
+  @media screen and (max-width: 1100px){
   
     .gallery-content h5{
       text-align: center;
@@ -1033,7 +1035,11 @@ footer .bottom:hover { color: #fff; }
       width: 100%;
       margin-bottom: 10px;
     }
-  
+    .list-gallery{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
     .list-gallery li{
       text-align: center;
       display: block;
@@ -1049,12 +1055,20 @@ footer .bottom:hover { color: #fff; }
       background-color: #e5e5e5;
       color: #8d8b8f;
     }
+
+    .gallery-images img{
+      height: 100px;
+    }
   }
   /* gallery done */
 
   /* slider css  */
   
 @media screen and (max-width: 910px){
+  
+  .gallery-images img{
+    height: 75px;
+  }
   .slider-section{
     width: 100%;
     padding-top: 70px;
