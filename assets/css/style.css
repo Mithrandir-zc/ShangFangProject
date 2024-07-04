@@ -469,24 +469,6 @@ nav input:checked ~ .navbar{
   color:#8d8b8f;
 }
 
-.gallery-images{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  row-gap: 40px;
-  column-gap: 100px;
-  margin-bottom: 118px;
-}
-
-.gallery-images.images {
-  margin: auto 20px   
-}
-.gallery-images.images{
-  width: 359px;
-  height: 240px;  
-}
-
 /* gallery section done */
 
 /* slider section start */
@@ -1002,16 +984,20 @@ footer .bottom:hover { color: #fff; }
 /* gallery css */
 
 @media screen and (max-width: 1326px){
-  .gallery-images{
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 900px;
     width: 100%;
-    justify-content: space-evenly;
+  }
+  ul .images{
+    height: 240px;
+    width: 350px;
   }
 }
   
-  @media screen and (max-width: 910px){
+@media screen and (max-width: 910px){
   
     .gallery-content h5{
       text-align: center;
@@ -1026,11 +1012,15 @@ footer .bottom:hover { color: #fff; }
       color: #8d8b8f;
       margin-bottom: 50px;
     }
-  
+    .gallery-content ul{
+      display: flex;
+      flex-direction: row;
+    }
     .gallery-images{
-      flex-wrap: wrap;
+      flex-wrap: row wrap;
       width: 100%;
       margin-bottom: 10px;
+      
     }
   
     .list-gallery li{
@@ -1046,7 +1036,7 @@ footer .bottom:hover { color: #fff; }
       padding: 5px 12px;
       font-size: 16px;
       background-color: #e5e5e5;
-      color: #8d8b8f;
+      color: #8d8b8f
     }
   }
   /* gallery done */
