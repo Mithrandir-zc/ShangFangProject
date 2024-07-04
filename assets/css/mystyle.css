@@ -25,7 +25,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: flex;
+  display: block;
 }
 
 /* Force scrollbar */
@@ -258,6 +258,70 @@ li {
     padding: 20px 0px 0px 10px;
     
 }
+.introcontainer {
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+}
+.introcontainer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.personalicon{
+  background-color: #363636;
+  display: flex;
+  flex-flow: column wrap;
+  height: 26vw;
+  width: 23vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 1.5vw;
+  margin-top: 2vw;
+  border-radius: 10px;
+  opacity: 0.;
+}
+.personalicon img{
+  max-width: 100%;
+}
+.intromain{
+  background-color:#669c53;
+}
+
+/*footer*/
+
+footer{
+  padding-top: 38px;
+  background-color: #363636;
+  text-align: center;
+}
+
+.social-icon .title { display: none; }
+
+.social-icon a{
+ padding: 10px 13px;
+ border-radius: 55px;
+ font-weight: 700;
+ color:#69ad31;
+ background-color: #464646;
+ margin-right: 30px;
+}
+
+.social-icon a:hover{
+ background-color: #69ad31;
+ color: #fff;
+}
+
+footer span{
+ color: #8d8b8f;
+ font-size: 16px;
+ display: block;
+ margin-top: 54px;
+}
+
+footer .bottom { color: #8d8b8f; }
+footer .bottom:hover { color: #fff; }
+/*footer end*/
 
 @media screen and (max-width: 1280px){
     header { width: 100%; }
@@ -301,5 +365,44 @@ li {
       padding: 20px;
       font-size: 15px;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
+  }
+  @media (min-width:1920px) and (max-width:2580px){
+    .introcontainer {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .introcontainer ul .personalicon{
+      height: 20vw;
+      width: 30vw;
+    }
+  }
+
+  @media screen and (max-width: 1280px){
+    footer { width: 100%; }
+  }
+  
+  @media screen and (max-width: 780px){
+  
+    footer { text-align: center; }
+  
+    .social-icon a{
+     padding: 8px 5px;
+     font-size: 13px;
+      margin-right: 25px;
+  }
+  
+    footer span { font-size: 10x; }
+  }
+  
+  @media screen and (max-width: 410px){
+  
+    footer { width: 100%; }
+  
+    footer span{
+    color: #8d8b8f;
+    font-size: 12px;
+    display: block;
+    margin-top: 34px;
     }
   }
