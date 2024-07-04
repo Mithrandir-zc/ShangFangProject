@@ -469,12 +469,13 @@ nav input:checked ~ .navbar{
 
 .gallery-images{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  row-gap: 1vw;
-  column-gap: 1.5vw;
-  margin-bottom: 118px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row wrap;
+  column-gap: 2vw;
+}
+.gallery-images .images{
+
 }
 
 
@@ -992,25 +993,34 @@ footer .bottom:hover { color: #fff; }
 /* our services done */
 
 /* gallery css */
-@media (min-width: 1920px) and (max-width: 2580px){
+@media (min-width: 1921px){
   .gallery-images img{
-    height: 240px;
-    width: 359px;
+    width: 24vw;
+    height: 20vw;
   }
 }
-@media (max-width: 1920px){
-}
-@media screen and (max-width: 1400px){
+@media (max-width: 1920px) {
   .gallery-images{
+    display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-items: center;
     align-items: center;
+  }
+  .gallery-images .images{
+    width: 18vw;
+    height: 16vw;
+  }
+}
+@media (max-width: 1000px){
+  .gallery-images ul{
+    display: flex;
+    flex-wrap: row wrap;
     width: 100%;
     justify-content: space-evenly;
   }
-  .gallery-images img{
-    height: 160px;
-    width: 200px;
+  .gallery-images .images{
+    width: 14vw;
+    height: 12vw;
   }
 }
   
@@ -1024,34 +1034,41 @@ footer .bottom:hover { color: #fff; }
     }
   
     .gallery-content p{
-      font-size: 17px;
+      font-size: 1em;
       text-align: center;
       color: #8d8b8f;
-      margin-bottom: 50px;
+      margin-bottom: 3vw;
     }
   
     .gallery-images{
       flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center;
       width: 100%;
+      height: 40vw;
+      margin-top: 10px;
       margin-bottom: 10px;
+      padding-bottom: 10vw;
     }
-    .list-gallery{
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
+    .gallery-images .images{
+      width: 120px;
+      height: 100px;
     }
     .list-gallery li{
       text-align: center;
-      display: block;
+      display: flex;
+      justify-content: center;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 2vw;
     }
   
     .list-gallery a{
       border-radius: 5px;
-      margin-right: 19px;
-      padding: 5px 12px;
-      font-size: 16px;
+      margin-right: 2vw;
+      padding: 0.75vw 1vw;
+      font-size: 0.75em;
       background-color: #e5e5e5;
       color: #8d8b8f;
     }
