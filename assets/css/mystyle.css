@@ -269,9 +269,13 @@ li {
   flex-wrap: wrap;
 }
 .personalicon{
-  background-color: #363636;
+  background-color: #669c53;
+  color: white;
+  opacity: 0.9;
   display: flex;
   flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
   height: 26vw;
   width: 23vw;
   margin-left: 2vw;
@@ -285,18 +289,26 @@ li {
   max-width: 100%;
 }
 .intromain{
-  background-color:#669c53;
+  background-image: url(../images/introbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .servicecontainer{
   display: flex;
   flex-direction: row wrap;
   padding-left: 2vw;
   padding-right: 2vw;
+  background-image: url(../images/service.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .servicecontainer .servicewrapper{
-  height: 50vw;
-  width: 40vw;
-  background-color: #69ad31;
+  height: 40vw;
+  width: 100%;
+  background-color:#669c53;
+  color: white;
+  opacity: 0.9;
   margin-top: 4vw;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -309,10 +321,18 @@ li {
   justify-content: space-evenly;
 }
 .servicecontainer .servicewrapper a{
-  width: 10vw;
-  height: 5vw;
-  border-radius: 1vw;
-  background-color: #1c5b42;
+  width: 8vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicecontainer .servicewrapper a:hover{
+  text-decoration: underline;
 }
 .servicecontainer .servicewrapper img{
   width: fit-content;
