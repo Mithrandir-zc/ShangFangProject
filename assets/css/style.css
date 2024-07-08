@@ -356,7 +356,8 @@ nav input:checked ~ .navbar{
 .our-services{
   background-color: #69ad31;
   background-image: url(../images/bg2.jpg);
-  padding-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 .our-services .wrapper{
   display: flex;
@@ -365,7 +366,7 @@ nav input:checked ~ .navbar{
   flex-direction: column;
 }
 .our-services h3{
-  color:#69ad31;
+  color:white;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -374,16 +375,17 @@ nav input:checked ~ .navbar{
 .our-services h4{
   font-size: 37px;
   font-weight:570 ;
-  color:#669c53;
+  color:white;
   margin-bottom: 40px;
 }
 
 .our-services span{
-  text-align: center;
   display: block;
-  border: 1px solid #fff;
-  width: 6.2%;
+  width:20%;
+  text-align: center;
   margin: 0 auto 28px;
+  color: #69ad31;
+  border: 2px solid #69ad31;
 }
 
 .our-services p{
@@ -607,24 +609,148 @@ nav input:checked ~ .navbar{
   main styling ends here
 =================================*/
 .contact-us{
-  /* 100%窗口高度 */
-  height: 100vh;
-  /* 弹性布局 水平+垂直居中 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* 径向渐变背景 */
-  background: radial-gradient(circle at top center,#718497,#29323c);
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 渐变背景 */
+    background-image: url(/assets/images/gallery1/bk.jpg);
+    padding-bottom: 200px;
+    padding-top: 100px;
+  }
+.contact-us h3{
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.contact-container{
+.contact-us p{
+  text-align: center;
+  color: #efe7f7;
+  margin-bottom: 40px;
+}
+.contact-us span{
+  display: block;
+  width:7%;
+  text-align: center;
+  margin: 0 auto 30px;
+  color: #69ad31;
+  border: 2px solid #69ad31;
+}
+.contact1-container{
   /* 弹性布局 默认水平排列 */
   display: flex;
   width: 90vw;
   max-width: 900px;
   height: 400px;
   /* 溢出隐藏 */
-  padding-bottom: 100px;
   overflow: hidden;
+}
+
+.contact-container{
+  /* 相对定位 */
+  position: relative;
+  /* 弹性布局 横向排列 允许换行 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contact-container .box{
+  position: relative;
+  width: 240px;
+  height: 280px;
+  border-radius: 20px;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 动画过渡 */
+  transition: 0.5s;
+}
+/* 鼠标移入，盒子变大 */
+.contact-container .box:hover{
+  transform: scale(1.25);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.contact-container .box .img-box{
+  /* 绝对定位 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 渐变遮罩（黑色——透明） 默认隐藏 */
+.contact-container .box .img-box::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#222,transparent);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* 鼠标移入，渐变遮罩显示 */
+.contact-container .box:hover .img-box::before{
+  opacity: 1;
+}
+.contact-container .box .img-box img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* 保持原有尺寸比例，裁切长边 */
+  object-fit: cover;
+}
+.contact-container .box .text-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  /* 弹性布局 元素位于容器的结尾 */
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  z-index: 2;
+}
+.contact-container .box .text-box h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* 默认移出可视范围 */
+  transform: translateY(200px);
+  transition: 0.5s;
+}
+.contact-container .box:hover .text-box h2{
+  /* 鼠标移入，移入可视范围 */
+  transform: translateY(-50gitpx);
+  /* 设置动画延迟时间 */
+  transition-delay: 0.3s;
+}
+.contact-container .box .text-box p{
+  font-size: 13px;
+  line-height: 20px;
+  /* 默认移出可视范围 */
+  transform: translateY(200px);
+  transition: 0.5s;
+}
+.contact-container .box:hover .text-box p{
+  /* 鼠标移入，移入可视范围 */
+  transform: translateY(-50px);
+  /* 设置动画延迟时间 */
+  transition-delay: 0.4s;
 }
 .item{
   /* 相对定位 */
