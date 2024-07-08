@@ -617,7 +617,10 @@ nav input:checked ~ .navbar{
     align-items: center;
     flex-direction: column;
     /* 渐变背景 */
-    background-image: url(/assets/images/gallery1/bk.jpg);
+    background-image: url(/assets/images/gallery1/bk2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: 200px;
     padding-top: 100px;
   }
