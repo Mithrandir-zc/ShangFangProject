@@ -295,7 +295,7 @@ li {
 }
 .servicecontainer{
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: wrap;
   padding-left: 2vw;
   padding-right: 2vw;
   background-image: url(../images/service.jpg);
@@ -305,7 +305,7 @@ li {
 }
 .servicecontainer .servicewrapper{
   height: 40vw;
-  width: 100%;
+  width: 30vw;
   background-color:#669c53;
   color: white;
   opacity: 0.9;
@@ -335,9 +335,10 @@ li {
   text-decoration: underline;
 }
 .servicecontainer .servicewrapper img{
-  width: fit-content;
-  height: 20vw;
+  width: 30vw;  
+  height: 30vw;
 }
+
 /*footer*/
 
 footer{

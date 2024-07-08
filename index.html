@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
-
 </head>
 
 <body>
@@ -31,24 +30,24 @@
               <a href="index.html" title="Landscaper">Mountain ShangFang</a>
             </h1>
           </div>
-          <nav >
-           <input type="checkbox" class="toggle-menu">
-           <div class="hamburger"></div>
-              <ul class="navbar">
+          <nav>
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+            <ul class="navbar">
               <li>
-                <a href="intro.html" title="About">INTRODUCTION</a>
+                <a href="#introSection" title="About">INTRODUCTION</a>
               </li>
               <li>
-                <a href="allService.html" title="Services">SERVICES</a>
+                <a href="#serviceSection" title="Services">SERVICES</a>
               </li>
               <li>
-                <a href="#FIXME" title="Gallery">GALLERY</a>
+                <a href="#gallerySection" title="Gallery">GALLERY</a>
               </li>
               <li>
-                <a href="#FIXME" title="Testimonials">LINK</a>
+                <a href="#sliderSection" title="Testimonials">LINK</a>
               </li>
               <li id="contact">
-                <a href="#FIXME" title="Contact">CONTACT</a>
+                <a href="#contactSection" title="Contact">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -71,7 +70,8 @@
               Enjoying wonderful landscape near the empiral captial
             </P>
             <div>
-              <a href="https://baike.baidu.com/item/%E4%B8%8A%E6%96%B9%E5%B1%B1%E5%9B%BD%E5%AE%B6%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD/10496086" title="More info" id = "more_info">MORE INFO</a>
+              <a href="https://baike.baidu.com/item/%E4%B8%8A%E6%96%B9%E5%B1%B1%E5%9B%BD%E5%AE%B6%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD/10496086"
+                title="More info" id="more_info">MORE INFO</a>
             </div>
           </div>
         </div>
@@ -79,94 +79,116 @@
       <!-- banner section ends -->
 
       <!-- Welcome section start -->
-      <section class="welcome-section">
-        <div class="wrapper">
-          <div class="welcome-content">
-            <div class="content1">
-              <h3>
-                WELCOME to <span>Mountain ShangFang</span>
-              </h3>
-              <span class="line"></span>
-              <p>
-                Located in the southwestern part of Beijing, Shangfangshan National Forest Park is a stunning natural reserve renowned for its picturesque landscapes and cultural heritage. Covering an area of over 7,000 hectares, the park is a haven for nature enthusiasts and history buffs alike. 
-              </p>
-              <p>
-                The park is famous for its unique karst landforms, including numerous caves, cliffs, and peaks, which offer breathtaking views and exciting exploration opportunities. Among these natural wonders, Shifo Cave and Baigu Cave stand out as must-visit attractions due to their impressive stalactites and stalagmites formations.
-              </p>
-              <div>
-                <a href="AllService.html" title="View All Services"> VIEW ALL SERVICES</a>
-              </div>
+      <section class="welcome-section" id="introSection">
+        <div>
+          <p>About us</p>
+        </div>
+        <div class="welcome-content">
+          <div class="content1">
+            <h3>
+              WELCOME to <span>Mountain ShangFang</span>
+            </h3>
+            <span class="line"></span>
+            <p>
+              Located in the southwestern part of Beijing, Shangfangshan National Forest Park is a stunning natural
+              reserve renowned for its picturesque landscapes and cultural heritage. Covering an area of over 7,000
+              hectares, the park is a haven for nature enthusiasts and history buffs alike.
+            </p>
+            <p>
+              The park is famous for its unique karst landforms, including numerous caves, cliffs, and peaks, which
+              offer breathtaking views and exciting exploration opportunities. Among these natural wonders, Shifo Cave
+              and Baigu Cave stand out as must-visit attractions due to their impressive stalactites and stalagmites
+              formations.
+            </p>
+            <div>
+              <a href="#serviceSection" title="View All Services"> VIEW ALL SERVICES</a>
             </div>
-            <ul class="content">
-              <li class="inner-content">
-                <figure>
-                  <img src="assets/images/guide.jpg" alt="Garder care">
-                </figure>
-                <span>
-                  Guide
-                </span>
-                <p>
-                  Personalized guide service won't let you miss any fantastic landscape.
-                </p>
-              </li>
-              <li class="inner-content">
-                <figure>
-                  <img src="assets/images/watch and learn.jpg" alt="Lawn care">
-                </figure>
-                <span>
-                  Watch And Learn
-                </span>
-                <p>
-                  Massive knowledges from science to humanities provided. Broaden your horizons when you have a nice trip.
-                </p>
-              </li>
-            </ul>
           </div>
+          <ul class="content">
+            <li class="inner-content">
+              <figure>
+                <img src="assets/images/guide.jpg" alt="Garder care">
+              </figure>
+              <span>
+                Guide
+              </span>
+              <p>
+                Personalized guide service won't let you miss any fantastic landscape.
+              </p>
+            </li>
+            <li class="inner-content">
+              <figure>
+                <img src="assets/images/watch and learn.jpg" alt="Lawn care">
+              </figure>
+              <span>
+                Watch And Learn
+              </span>
+              <p>
+                Massive knowledges from science to humanities provided. Broaden your horizons when you have a nice trip.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- welcome section end -->
 
       <!-- Services section start -->
-      <section class="our-services">
+      <section class="our-services" id="serviceSection">
         <div class="wrapper">
-          <h4>
-            Our services
-          </h4>
-          <span class="line"></span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, maiores.</p>
-          <ul class="services">
-            <li class="services-content">
-              <figure>
-                <img src="https://th.bing.com/th/id/OIP.2PuTfXOLxZXrG8AmwyI7bwAAAA?w=123&h=180&c=7&r=0&o=5&pid=1.7" alt="Lawn care">
-              </figure>
-              <span class="lawn">ShangFangPedia</span>
-              <!-- Lawn care -->
-              <p>Various resources from GIS to Mathematics avaliable</p>
-            </li>
-            <li class="services-content">
-              <figure>
-                <img src="assets/images/landscapetography.jpg" alt="Landscape Design">
-              </figure>
-              <span class="lawn">Tourism</span>
-              <!-- Landscape Design -->
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam cumque corporis eaque repellendus
-                laudantium soluta recusandae necessitatibus earum nihil.</p>
-            </li>
-            <li class="services-content">
-              <figure>
-                <img src="assets/images/videostack.png" alt="Lawn care">
-              </figure>
-              <span class="lawn">Video&Image Stack</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam cumque corporis eaque repellendus
-                laudantium soluta recusandae necessitatibus earum nihil.</p>
-            </li>
-          </ul>
+
+          <div>
+            <h3>VARIOUS SERVICES AVAILBLE</h3>
+            <p></p>
+          </div>
+          <div class="contact-container">
+            <div class="item active" style="background-image: url(assets/images/shangfangpedia.jpg);">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="icon">
+                  <i class="fa fa-sun-o"></i>
+                </div>
+                <a href="https://mithrandir-zc.github.io/ShangFangDocs/"><div class="text">
+                  <div class="tit">ShangFangPedia</div>
+                  <div class="sub">Click Now</div>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="background-image: url(assets/images/133/cloud.jpg);">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="icon">
+                  <i class="fa fa-cloud"></i>
+                </div>
+                <div class="text">
+                  <a href="https://www.geosceneonline.cn/geoscene/apps/storymaps/stories/b5688a9bb1be44d48d20d81b63862aa4">
+                  <div class="tit">Tourism</div>
+                  <div class="sub">
+                    Click Now
+                  </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="background-image: url(assets/images/133/rain.jpg);">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="icon">
+                  <i class="fa fa-tint"></i>
+                </div>
+                <div class="text">
+                  <div class="tit">Video Stack</div>
+                  <div class="sub">Click Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- services section end here -->
 
       <!-- Gallery section start -->
-      <section class="gallery-section">
+      <section class="gallery-section" id="gallerySection">
         <div class="wrapper">
           <div class="gallery-content">
 
@@ -175,14 +197,7 @@
             </h5>
             <span class="line"></span>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, cumque.</p>
-            <ul class="list-gallery">
-              <li><a class="active" href="#FIXME" title="All">ALL</a></li>
-              <li><a href="#FIXME" title="Lawn Care">LAWN CARE</a></li>
-              <li><a href="#FIXME" title="Garder Care">GARDEN CARE</a></li>
-              <li><a href="#FIXME" title="Planting">PLANTING</a></li>
-            </ul>
-            <style>
-            </style>
+
           </div>
           <ul class="gallery-images">
             <li class="images">
@@ -219,7 +234,7 @@
 
       <!-- slider-section start -->
 
-      <section class="slider-section">
+      <section class="slider-section" id="sliderSection">
         <div class="wrapper">
           <ul class="slider">
             <li class="active-slide">
@@ -274,59 +289,46 @@
       <!-- slider section end here -->
 
       <!-- contactus section start -->
-      <section class="contact-us">
-        <div class="wrapper">
-          <span class="head">Contact Us</span>
-          <span class="line"></span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum!</p>
+      <section class="contact-us" id="contactSection">
 
-          <ul class="contact-info">
-            <li class="info">
-              <span class="add">ADDRESS</span>
-              <span class="line"></span>
-              <span class="address">4321 california st,</span>
-              <span class="time"> san francisco CA 12345</span>
-            </li>
-            <li class="info">
-              <span class="add">WORKING HOURS</span>
-              <span class="line"></span>
-              <span class="address">Monday-Saturday: 07:00-18:00</span>
-              <span class="time">Sunday:CLOSED</span>
-            </li>
-            <li class="info">
-              <span class="add">CONTACT INFO</span>
-              <span class="line"></span>
-              <span class="address"><a href="tel: +1 !23 456 1234" title="contact us">Phone: +1 !23 456 1234</a></span>
-              <span class="time"><a href="mailto:info@company.com">Email:info@company.com</a></span>
-            </li>
-          </ul>
-          <div>
-            <p id="message">LEAVE US MESSAGE</p>
+        <div class="contact-container">
+          <div class="item active" style="background-image: url(assets/images/133/sun.jpg);">
+            <div class="shadow"></div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-sun-o"></i>
+              </div>
+              <div class="text">
+                <div class="tit">这是标题</div>
+                <div class="sub">这是一段描述</div>
+              </div>
+            </div>
           </div>
-         
-          <ul class="person-info">
-            <form action="#FIXME" method="POST">
-              <li class="Name">
-                <div>
-                  <input type="text" placeholder="Name">
+          <div class="item" style="background-image: url(assets/images/133/cloud.jpg);">
+            <div class="shadow"></div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-cloud"></i>
+              </div>
+              <div class="text">
+                <div class="tit">Tourism</div>
+                <div class="sub">
+                  一段描述
                 </div>
-                <div>
-                  <input type="text" placeholder="Email">
-                </div>
-              </li>
-            </form>
-          </ul>
-          <ul class="message">
-            <form action="#FIXME" method="POST">
-              <li class="message">
-                <div>
-                  <textarea name="Message" placeholder="Message"></textarea>
-                </div>
-              </li>
-            </form>
-          </ul>
-          <div class="Send">
-            <a href="#FIXME" title="Send Message">SEND MESSAGE</a>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(assets/images/133/rain.jpg);">
+            <div class="shadow"></div>
+            <div class="content">
+              <div class="icon">
+                <i class="fa fa-tint"></i>
+              </div>
+              <div class="text">
+                <div class="tit">这是标题</div>
+                <div class="sub">这是一段描述</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -364,7 +366,7 @@
 
   <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="js/script.js"></script> -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/133.js"></script>
 </body>
 
 </html>
