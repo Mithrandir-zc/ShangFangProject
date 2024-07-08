@@ -52,6 +52,7 @@ strong {
 em { font-style: italic; }
 
 img {
+  overflow: hidden;
   max-width: 100%;
 }
 
@@ -1006,8 +1007,9 @@ footer .bottom:hover { color: #fff; }
     align-items: center;
   }
   .gallery-images .images{
-    width: 18vw;
-    height: 16vw;
+    width: 20vw;
+    height: 17vw;
+    overflow: hidden;
   }
 }
 @media (max-width: 1000px){
