@@ -608,7 +608,7 @@ nav input:checked ~ .navbar{
     align-items: center;
     flex-direction: column;
     /* 渐变背景 */
-    background-image: url(../images/gallery1/bk2.jpg);
+    background: radial-gradient(circle at top center,#638684,#10243a);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
