@@ -735,7 +735,7 @@ nav input:checked ~ .navbar{
 }
 .contact-container .box:hover .text-box h2{
   /* 鼠标移入，移入可视范围 */
-  transform: translateY(-50gitpx);
+  transform: translateY(-50px);
   /* 设置动画延迟时间 */
   transition-delay: 0.3s;
 }
