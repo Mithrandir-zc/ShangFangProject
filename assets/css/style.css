@@ -565,15 +565,6 @@ nav input:checked ~ .navbar{
 
 /* contact us section start */
 
-.contact-us{
-  padding-top: 108px;
-  padding-bottom: 90px;
-  background-image: url(../images/introbackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f6f6f6;
-  position: relative;
-}
 
 .introcontainer {
   padding-bottom: 10vw;
