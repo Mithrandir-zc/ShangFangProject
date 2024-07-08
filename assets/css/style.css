@@ -1335,11 +1335,6 @@ footer .bottom:hover { color: #fff; }
 }
 
 @media screen and (max-width: 950px){
-   .contact-us{
-    padding-top: 78px;
-    padding-bottom: 80px;
-    background-color: #f6f6f6;
-  }
 
   .person-info li{
     flex-wrap: wrap;
